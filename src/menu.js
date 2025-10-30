@@ -1,9 +1,8 @@
-import foodMountain from './images/mountain.jpg';
+import foodMountain from './images/mountain.png';
 
 export function loadMenu() {
   const content = document.getElementById('content');
-  const header = document.createElement('h1');
-  header.innerText = 'Menu';
+
 
   const img = document.createElement('img');
     img.src = foodMountain;
@@ -23,5 +22,5 @@ export function loadMenu() {
     
     list.append(li1, li2, li3);
 
-    content.append(header, img, list);
+    content.append(img, list);
 }

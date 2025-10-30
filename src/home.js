@@ -1,10 +1,10 @@
-import foodImg from './images/gluttony.jpg';
+import foodImg from './images/gluttony.png';
 
 export function loadHome() {
   const content = document.getElementById('content');
 
   const header = document.createElement('h1');
-  header.innerText = 'Home';
+  header.innerText = 'The Hellish Gourmand';
 
   const img = document.createElement('img');
   img.src = foodImg;

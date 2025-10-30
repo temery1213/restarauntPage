@@ -24,6 +24,12 @@ button {
   background: none;
   color: rgb(224, 210, 10);
   font-size: large;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 1;
 }
 
 p {
@@ -57,7 +63,13 @@ ul {
 .menu-image {
   width: 100vw;
   max-width: 1000px;
+  max-height: 800px;
   border-radius: 10px; 
+  background-color: transparent;
+}
+
+.contact-image {
+  max-height: 800px;
 }
 
 #content {
@@ -75,4 +87,5 @@ ul {
   margin-top: 10px;
   -webkit-box-shadow: 5px 5px 5px -1px #000000; 
   box-shadow: 5px 5px 5px -1px #000000;
+  margin-bottom: 50px;
 }
