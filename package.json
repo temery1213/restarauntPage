@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "start": "webpack serve",
-    "dev": "webpack serve",
-    "deploy": "git subtree push --prefix dist origin gh-pages"
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "build": "webpack --mode production",
+  "start": "webpack serve --mode development",
+  "dev": "webpack serve --mode development",
+  "deploy": "git diff-index --quiet HEAD -- || (echo '⚠️ You have uncommitted changes. Please commit them before deploying.' && exit 1) && npm run build && git subtree push --prefix dist origin gh-pages"
   },
   "repository": {
     "type": "git",
